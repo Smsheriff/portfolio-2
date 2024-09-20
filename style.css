@@ -1,0 +1,469 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.header{
+    position: fixed;  
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    z-index: 2;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 20px;
+    list-style: none;
+    gap: 100px;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 1px; 
+    position: relative;
+    right: 30px;
+    left: 2px;
+
+}
+
+nav a::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 2px;
+    transition: 0.5s;
+}
+a:hover:after{
+    width: 100%;
+}
+
+#home{
+    height: 870px;
+}
+
+#home div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 80px;  
+}
+
+#home p{
+    color: #c49b66;
+}
+
+/* //about */
+
+#about{
+    height: 870px;
+}
+.whole{
+    height: 100%;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+#about img{
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 8px 8px rgb(108, 107, 106);
+}
+.body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.body1{
+    font-size: 50px;
+}
+.body2{
+    background-color: #c49b66;
+    color: whitesmoke;
+    display: inline-block;
+    width: 430px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 40px;
+}
+.body3{
+    font-size: 30px;
+}
+.body4{
+    font-size: 20px;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #434141;
+}
+.body5{
+    text-decoration: none;
+    background-color: #c49b66;
+    color: white;
+    padding: 8px;
+    border: 1px solid #c49b66;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+}
+.body5:hover{
+    color: black;
+    background-color: white;   
+}
+
+/* //skills */
+
+#skills{
+    height: 900px;
+}
+.h1skills{
+     display: flex;
+     padding-top: 100px;
+     justify-content: center;
+}
+.skills{
+    margin-top: 280px;
+}
+.skills1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+.skills2{
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.3s ease;
+}
+.skills2:hover{
+    transform: scale(1.05);
+}
+
+/* //project */
+
+#projects{
+    height: 870px;
+}
+ .projectsh1{
+    margin-right: 150px;
+    margin-top: 200px;
+}
+.project1{
+    background-color: #f1eeec;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow:  4px 4px 4px;
+    transition: transform 0.3s ease;
+}
+.project1:hover{
+    transform: scale(1.05);
+}
+.project2{
+    background-color: #f1eeec;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow:  4px 4px 4px;
+    transition: transform 0.3s ease;
+}
+.project2:hover{
+    transform: scale(1.05);
+}
+.project3{
+    background-color: #f1eeec;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow:  4px 4px 4px;
+    transition: transform 0.3s ease;
+}
+.project3:hover{
+    transform: scale(1.05);
+}
+.project-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    padding-top: 180px;
+   
+}
+
+/* //contact */
+
+#contact{
+    height: 870px;
+}
+.contacth1{
+    display: flex;
+     padding-top: 100px;
+     justify-content: center;
+}
+.nametype{
+    background-color: whitesmoke;
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #c49b66;
+    box-shadow: 1px 1px 2px 2px #c49b66;
+}
+
+
+.typeemail{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #c49b66 ;
+    box-shadow: 1px 1px 2px 2px  #c49b66;
+}
+
+.sub{
+    background-color: whitesmoke;
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px; 
+    border: 1px solid #c49b66; 
+    box-shadow: 1px 1px 2px 2px  #c49b66; 
+
+}
+
+.message{
+    background-color:#fcfafa;
+    height: 35px;
+    width: 500px;
+    border-radius: 20px solid;
+    padding: 20px;
+}
+textarea{
+    max-width: 300px;
+    max-height: 100px;
+    min-width: 200px;
+    min-height: 100px;
+
+}
+
+.send{
+    background-color: #c49b66;
+    color: white;
+    width: 100px;
+    height: 40px;
+    width: 200px;
+    font-family: "Inter", sans-serif;
+    border: 1px solid  #c49b66;
+    border-radius: 8px; 
+    padding: 5px;
+}
+.send:hover{
+    color: black;
+    background-color: white;
+}
+.cont{
+    display: flex;
+    gap: 20px;
+}
+.cont2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   
+}
+.contimg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.whole2{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 70px;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    #home{
+        height: 2200px;
+    }
+    #home div{
+        margin-left: 500px; 
+        gap: 50px;
+        font-size: 90px;
+    }
+     .home1{
+          width: 500px;
+          display: flex;
+          flex-direction: row;
+         
+        }
+    
+#home p{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#about{
+    height: 2000px;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+}
+#about img{
+    box-shadow: 12px 12px;
+    height: 550px;
+}
+.body{
+    display: flex;
+    gap: 30px;
+}
+.body1{
+    font-size: 40px;
+    text-align: center;
+}
+.body2{
+    font-size: 50px;
+    width: 550px;
+}
+.body3{
+    font-size: 40px;
+    text-align: center;
+}
+.body4{
+    font-size: 30px;
+    text-align: center;
+}
+.body5{
+    font-size: 30px;
+    width: 200px;
+    margin-left: 150px;
+}
+#skills{
+    height: 2120px;
+}
+.h1skills{
+    font-size: 40px;
+}
+
+.skills{
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+}
+.skills1{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 50px;
+    margin-top: 300px;
+}
+.skills2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 300px;
+}
+.skills img{
+    width: 300px;
+    height: 300px;
+}
+#projects{
+   height: 2200px;
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 350px;
+    position: relative;
+    bottom: 300px;
+
+}
+.projectsh1{
+    font-size: 30px;
+    margin-left: 100px;
+}
+#contact{
+    height: 2200px;
+}
+.contact{
+    width: 1000px; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.nametype{
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+}  
+.typeemail{
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+}  
+.sub{
+    width: 860px;
+    height: 50px;
+    font-size: 25px;
+}
+.send{
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.contimg{
+    position: relative;
+    top: 700px; 
+    margin-left: 380px;
+}
+.contacth1{
+    font-size: 30px ;
+    margin-left: 500px;
+
+}
+.whole2{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+ .message{
+    width: 80%;
+}  
+.cont2{
+   margin-right: 80px;
+   gap: 20px;
+}
+.texarea{
+    border-radius: 10px;
+    width: 80%;
+    padding: 50px;
+    border: 2px solid black;
+    font-size: 40px;
+}
+
+}
