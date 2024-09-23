@@ -247,19 +247,20 @@ a:hover:after{
 
 }
 
-.message{
+#message{
     background-color:#fcfafa;
     height: 35px;
     width: 500px;
-    border-radius: 20px solid;
     padding: 20px;
+    border-radius: 20px solid#c49b66 ;
 }
 textarea{
     max-width: 300px;
     max-height: 100px;
-    min-width: 200px;
+    min-width: 300px;
     min-height: 100px;
-
+    border-radius: 5px;
+    border: solid #c49b66;
 }
 
 .send{

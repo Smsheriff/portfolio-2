@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header class="header">
@@ -26,8 +28,10 @@
          </div>
       </section>
       <section id="about">
-        <div class="whole">
+        <div class="whole" >
+            <div data-aos="flip-left">
             <img src="assets/images/my photo2.jpeg" height="420" alt="image">
+            </div>
             <div class="body">
                 <p class="body1">WHO AM I</p>
                 <p class="body2">MOHAMMED SHERIFF</p>
@@ -106,7 +110,7 @@
                     <div class="cont2">
                     <label for="subject"></label>
                     <input type="text" id="subject" placeholder="Subject" required class="sub">
-                    <textarea name="message" placeholder="Message" id=""></textarea>
+                    <textarea name="message" placeholder="Message" id="message"></textarea>
                     <button type="submit" class="send"> send message</button>
                     </div>
                  </div>
@@ -114,4 +118,7 @@
     </main>
     </section>
 </body>
+<script>
+    AOS.init();
+  </script> 
 </html>
