@@ -5,13 +5,14 @@
 
 /* //HOME */
 
-.header{
-    position: fixed;  
+.head{
+    position: sticky;  
     top: 0px;
     width: 100%;
-    background-color: #fff;
+    background-color: black;
     border-bottom: 2px solid #ddd;
     z-index: 2;
+    transition: background-color 0.8s;
 }
 ul{
     display: flex;
@@ -22,7 +23,7 @@ ul{
     gap: 100px;
 }
 nav a{
-    color: #000000;
+    color: white;
     text-decoration: none;
     letter-spacing: 1px; 
     position: relative;
@@ -45,6 +46,7 @@ a:hover:after{
 
 #home{
     height: 870px;
+    background: url(assets/images/url_1.png);
 }
 
 #home div{
@@ -331,12 +333,14 @@ textarea{
 
 
 @media screen and (max-width: 500px) {
-    #home{
-        height: 2200px;
+    .head{
+        width: 1200px;
     }
-    #home div{
-        margin-left: 500px; 
-         gap: 50px; 
+    #home{
+        height: 2580px;
+        width: 1200px;
+    }
+    #home div{ 
         font-size: 90px;
     }
      .home1{
@@ -345,11 +349,12 @@ textarea{
           flex-direction: row;
         }
         .image1{
+            display: flex;
             width: 650px;
             height: 650px; 
             border-radius: 700px;
             padding: 10px;
-            margin-bottom: 500px;   
+            margin-bottom: 400px;   
         }
     
 #home p{
@@ -359,12 +364,12 @@ textarea{
     font-size: 120px;
 }
 #about{
-    height: 2000px;
+    height: 2500px;
 }
 .whole{
     display: flex;
     flex-direction: column;
-    margin-left: 500px;
+    margin-left: 600px;
 }
 #about img{
     box-shadow: 12px 12px;
@@ -396,10 +401,11 @@ textarea{
     margin-left: 150px;
 }
 #skills{
-    height: 2120px;
+    height: 2500px;
 }
 .h1skills{
     font-size: 40px;
+    margin-top: 100px;
 }
 
 .skills{
@@ -412,33 +418,35 @@ textarea{
     flex-direction: column;
     font-size: 30px;
     gap: 50px;
-    margin-top: 300px;
+    margin-top: 400px;
+
 }
 .skills2{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-top: 300px;
+    margin-top: 400px;
 }
 .skills img{
     width: 300px;
     height: 300px;
 }
 #projects{
-   height: 2200px;
+   height: 2500px;
 }
 .project-container{
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin-left: 350px;
+    margin-left: 450px;
     position: relative;
     bottom: 300px;
 
 }
 .projectsh1{
     font-size: 30px;
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 #contact{
     height: 2200px;
@@ -477,13 +485,14 @@ textarea{
 }
 .contacth1{
     font-size: 30px ;
-    margin-left: 500px;
+    margin-left: 600px;
 
 }
 .whole2{
     display: flex;
     padding: 30px;
     flex-direction: column;
+    margin-left: 120px;
 }
  .message{
     width: 80%;
