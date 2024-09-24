@@ -2,6 +2,9 @@
     padding: 0%;
     margin: 0%;
 }
+
+/* //HOME */
+
 .header{
     position: fixed;  
     top: 0px;
@@ -10,7 +13,6 @@
     border-bottom: 2px solid #ddd;
     z-index: 2;
 }
-
 ul{
     display: flex;
     justify-content: center;
@@ -19,7 +21,6 @@ ul{
     list-style: none;
     gap: 100px;
 }
-
 nav a{
     color: #000000;
     text-decoration: none;
@@ -27,12 +28,10 @@ nav a{
     position: relative;
     right: 30px;
     left: 2px;
-
 }
-
 nav a::after{
     content: "";
-    background-color: red;
+    background-color: #c49b66;
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -54,11 +53,19 @@ a:hover:after{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 80px;  
+    font-size: 80px; 
+    gap: 50px; 
 }
-
 #home p{
     color: #c49b66;
+}
+.image1{
+    width: 300px;
+    height: auto;
+  box-shadow: 0 0 20px #c49b66, 
+              0 0 30px #c49b66, 
+              0 0 20px #c49b66;
+  border-radius: 200px;
 }
 
 /* //about */
@@ -140,9 +147,29 @@ a:hover:after{
 .skills2{
     display: flex;
     justify-content: space-around;
-    transition: transform 0.3s ease;
 }
-.skills2:hover{
+ .html{
+    transition: transform 0.5s ease;
+ }
+.html1:hover{
+    transform: scale(1.05);
+}
+.css{
+    transition: transform 0.5s ease;
+}
+.css1:hover{
+    transform: scale(1.05);
+}
+.photo1{
+    transition: transform 0.5s ease;
+}
+.photo1:hover{
+    transform: scale(1.05);
+}
+.art1{
+    transition: transform 0.5s ease;
+}
+.art1:hover{
     transform: scale(1.05);
 }
 
@@ -152,7 +179,6 @@ a:hover:after{
     height: 870px;
 }
  .projectsh1{
-    margin-right: 150px;
     margin-top: 200px;
 }
 .project1{
