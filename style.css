@@ -111,7 +111,7 @@ a:hover:after{
 }
 .body4{
     font-size: 20px;
-    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Apple Color Emoji", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #434141;
 }
 .body5{
@@ -338,7 +338,7 @@ textarea{
         width: 1200px;
     }
     #home{
-        height: 2580px;
+        height: 2200px;
         width: 1200px;
     }
     #home div{ 
